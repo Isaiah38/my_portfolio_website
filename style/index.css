@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    padding: 10px 24px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    height: 80vh;
+    padding: 24px;
+}
+
+.header_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header_left_container {
+    width: 100px;
+}
+
+.header_left_container img{
+    width: 100%;
+}
+.header_right_container {
+    flex-grow: 1;
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2vw;
+}
+
+.header_right_container a {
+    font-size: 16px;
+}
