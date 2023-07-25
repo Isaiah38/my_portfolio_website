@@ -43,7 +43,13 @@ header {
     align-items: center;
     gap: 1vw;
 }
-
+#menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1vw;
+    cursor: pointer;
+}
 .header_right_container a{
     display: flex;
     justify-content: flex-end;
@@ -55,8 +61,28 @@ header {
     user-select: none;
     
 }
+.header_right_container span img{
+    width: 100%;
+}
+
+.header_right_container span{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
 
 .header_right_container a:hover {
     background-color: var(--hoverLightPurple);
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    #menu{
+        display: none;
+    }
+    .header_right_container span{
+        display: block;
+    }
+
 }
