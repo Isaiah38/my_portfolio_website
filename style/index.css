@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 :root {
-    --hoverDarkPurple: purple;
-    --hoverLightPurple: rgb(251, 213, 251);
-    --hoverButtontextColor: white;
+    --hoverDarkPurple: #800080;
+    --hoverLightPurple: #fbd5fb;
+    --hoverButtontextColor: #ffffff;
+    --bgColor: #2a2b30;
+    --yellow: #ffff00;
 }
 
 * {
@@ -22,8 +26,24 @@ header {
 .hero {
     height: 80vh;
     padding: 24px;
+    color: black;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
 }
 
+button{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.hireme_btn{
+    margin-top: 10%;
+    
+}
 .header_wrapper {
     display: flex;
     align-items: center;
@@ -33,9 +53,10 @@ header {
     width: 100px;
 }
 
-.header_left_container img{
+.header_left_container img {
     width: 100%;
 }
+
 .header_right_container {
     flex-grow: 1;
     display: flex;
@@ -43,14 +64,16 @@ header {
     align-items: center;
     gap: 1vw;
 }
-#menu{
+
+#menu {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 1vw;
     cursor: pointer;
 }
-.header_right_container a{
+
+.header_right_container a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -59,13 +82,14 @@ header {
     border-radius: 5px;
     transition: .2s;
     user-select: none;
-    
+
 }
-.header_right_container span img{
+
+.header_right_container span img {
     width: 100%;
 }
 
-.header_right_container span{
+.header_right_container span {
     width: 30px;
     height: 30px;
     display: none;
@@ -75,14 +99,31 @@ header {
     background-color: var(--hoverLightPurple);
     cursor: pointer;
 }
+.content_container.left p{
+    margin-top: 20px;
+    font-size: 16px;
+    max-width: 50%;
+    
+}
+@media only screen and (max-width: 600px) {
 
-@media only screen and (max-width: 600px){
-	/*Big smartphones [426px -> 600px]*/
-    #menu{
+    /*Big smartphones [426px -> 600px]*/
+    #menu {
         display: none;
     }
-    .header_right_container span{
+
+    .header_right_container span {
         display: block;
+    }
+
+    .hero {
+        font-size: 1em;
+    }
+    .content_container.left p{
+        margin-top: 20px;
+        font-size: 13px;
+        max-width: 100%;
+        
     }
 
 }
